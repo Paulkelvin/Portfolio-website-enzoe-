@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: white;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #2b6777;
+}
+
+/* BLOG PAGE */
+
+.body {
+  position: relative;
+}
+
+section {
+  padding: 0 2rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+section .blog--title {
+  font-size: 2rem;
+}
+
+section > .post--info {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  color: #808080;
+}
+
+section > .blog--banner {
+  width: 100%;
+  margin-left: center;
+  margin-right: center;
+  height: 33rem;
+}
+
+section > .post--info {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  gap: 0.3rem;
+}
+
+section > .post--info > .author--info {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+section > .post--info > .author--info > .author--image {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid #000;
+}
+
+section > .post--info > .author--info > .author--name,
+.date--published,
+.read--time {
+  font-size: 0.9rem;
+}
+
+section > h2 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+section > .paragraph {
+  margin-top: 0.5rem;
+  text-transform: none;
+}
+section > ol > .list--paragraph {
+  text-transform: none;
+}
+
+section > ol > .list--subtitle {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  list-style-position: inside;
+}
+
+section > ol > ul > li {
+  list-style: disc;
+  list-style-position: inside;
+  margin-top: 0.3rem;
+}
+
+section > ol > ul > li:nth-child(1) {
+  margin-top: 1rem;
+}
+
+section > ul > li {
+  list-style-position: inside;
+}
+
+section > .blog--paragraph16 {
+  margin-bottom: 5rem;
+}
+
+.blog--footer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin: 0 2rem;
+  height: 5rem;
+}
+
+.blog--footer > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.blog--footer > div > a {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 71.13rem) {
+  section > .post--info {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 40.65rem) {
+  section > .post--info {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 34.5rem) {
+  section > .post--info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section > .blog--banner {
+    height: 20rem;
+  }
+
+  section > .blog--title {
+    font-size: 1.5rem;
+  }
+
+  section > h2 {
+    font-size: 1.2rem;
+  }
+
+  section > .paragraph {
+    font-size: 0.8rem;
+  }
+}
